@@ -1,38 +1,24 @@
 # Welcome
-This repository contains a template for online experiments that integrates jsPsych, Google Sheets, and SONA. The goal is to make it easier to upload your experiments to the internet, gather data, and distribute credits for participation. Note this template is a work in progress. Pull requests and suggestions are welcome!
+This is the official repository for the Study of Correlations Between Perceptual and Cognitive Racial Biases.
 # Folders and Files
 
-## jsPsych
-
-This folder contains the most recent version (as of November 2020) of jsPsych for use in your experiments. There is no need to touch this unless you need to add some custom plugins or need to update to a different version.
+## Stimuli
+This folder contains all the images used in the study along with the consent form.
 
 ## jsSheet
 
-This folder contains the files necessary to get your experiment deployed with Google Sheets. It's important to note that changes to **Code.gs** and **index.html** are not immediately reflected in your app. They have to be deployed directly to your Google Sheets App.
+This folder contains the code utilized in Google Sheets.
 
-- **Code.gs** - Contains code that handles deploying your experiment, creating IDs, uploading data, and ensuring data is organized.  It is written in Google Script which is very similar to JavaScript.
-- **index.html** - Initial file served to the user. This file determines what other files are served to the user. 
+- **Code.gs** - Contains code that handled deploying the experiment, creating IDs, uploading data, and ensuring that the data was organized.  It is written in Google Script which is very similar to JavaScript.
+- **index.html** - This is the code that ran the actual experiment, displaying images and asking questions. 
 
-## resources
+## jsPsych
 
-This folder is meant to contain all multimedia files (or any "bulk" file) that are required for the experiment. Its use is purely organizational, but it can help to remove a lot of clutter & files from your code.
-
-## Experiment Files
-
-All files and folders used in your experiment that don't fit into another category should be held in the root directory. It currently holds **Experiment.js** and **format.css**, but you may need to expand the number here based on the needs of your work.
-
-- **Experiment.js** - The meat of your experiment. This file should hold the bulk of the code for your experiment. The default content here is near the minimum amount of code needed to run an experiment, save data, and then redirect to SONA to grant credit. Add trials to it until you have the experiment that you want!
-- **format.css** - css file that can be used to modify the appearance of the experiment. Its purpose is entirely aesthetic, but it may be necessary to your experiment if you need specific visual features.
+This folder contains the most recent version (as of November 2020) of jsPsych which was used for the experiment.
 
 ## READEME.md
 
-The **README.md** file is this document. I am a special file that will be the first thing that anyone going to your repository reads. Be sure to update me when you make a copy!
-
-# Deployment Tutorial
-This template is inteded to make deployment relatively easy. Follow the following steps to create your own deployed copy of the template.
-
-## Repository
-This repository is known as a *template*. This means you can make an entirely new repository and start with the files and organization you see here. You should start by making your own repository based off this template.
+You are currently reading the README.md file!
 
  **1. Click "Use this template", which is a green button found at the top of the jsPsych-Sheets-Integration-Template page.**
  
